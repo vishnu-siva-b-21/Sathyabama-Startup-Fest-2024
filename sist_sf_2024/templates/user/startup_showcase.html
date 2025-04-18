@@ -1,0 +1,440 @@
+{% extends "user/event_base.html" %}
+
+{% block title %} Startup Showcase {% endblock title %}
+
+{% block content %}
+<div class="page-container">
+<div class="container-fluid">
+        <div class="row">
+        <div class="col-xs-12">
+        <div class="cd-slider-nav">
+        <nav class="navbar navbar-expand-lg" id="tm-nav">
+                <a href="{{url_for('user.user_index')}}"><img src="{{url_for('static', filename='user/images/goBack.png')}}" alt="back"></a><a class="navbar-brand">Startup Showcase</a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-supported-content"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                class="collapse navbar-collapse"
+                id="navbar-supported-content"
+                >
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item selected">
+                <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="#0"
+                        data-no="1"
+                        >About Event</a
+                >
+                <div class="circle"></div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#0" data-no="2"
+                        >Event Speakers</a
+                >
+                <div class="circle"></div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#0" data-no="3"
+                        >Register Here</a
+                >
+                <div class="circle"></div>
+                </li>
+                </ul>
+                </div>
+        </nav>
+        </div>
+        </div>
+        </div>
+</div>
+<div class="container-fluid tm-content-container">
+        <ul class="cd-hero-slider mb-0 py-5">
+        <li class="px-3" data-page-no="1">
+        <section id="about" class="section-padding">
+        <div class="swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="content">
+                <p>
+                        Sathyabama Institute of Science and Technology proudly
+                        hosts an electrifying startup fest, a convergence of
+                        innovation and entrepreneurship. This event promises a
+                        dynamic platform for budding entrepreneurs, seasoned
+                        professionals, and investors alike. Through a myriad of
+                        meticulously planned activities, including round table
+                        discussions, mentorship sessions, and tech talks,
+                        participants delve into the depths of entrepreneurial
+                        wisdom. From idea pitching competitions to product
+                        exhibitions, the fest celebrates creativity and
+                        ingenuity. With MoU signings, investor connects, and
+                        intern networking opportunities, it fosters invaluable
+                        collaborations. Led by Sathyabama's commitment to
+                        nurturing talent, this event is a beacon illuminating
+                        the path towards a vibrant startup ecosystem.
+                </p>
+                </div>
+
+                <div class="image-container">
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_001.jpg')}}" style="--i: 2" alt="" />
+
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_002.jpg')}}" style="--i: 6" alt="" />
+
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_003.jpg')}}" style="--i: 8" alt="" />
+
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_004.jpg')}}" style="--i: 4" alt="" />
+
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_005.jpg')}}" style="--i: 1" alt="" />
+
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_006.jpg')}}" style="--i: 9" alt="" />
+
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_007.jpg')}}" style="--i: 7" alt="" />
+
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_008.jpg')}}" style="--i: 5" alt="" />
+
+                <img class="item" src="{{url_for('static', filename='user/images/main_event_split_img/startup_showcase/image_part_009.jpg')}}" style="--i: 3" alt="" />
+                </div>
+                </div>
+                </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        </section>
+        </li>
+        <li data-page-no="2">
+        <section id="speakers">
+        <div class="container-speaker">
+
+                <a href="#person1">
+                        <div class="speaker-card fade-in">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker1.jpg')}}" alt="Speaker 1" />
+                        <h3>Dr.BHARATHI</h3>
+                        <p>Dean - Academics</p>
+                        </div>
+                </a>
+        
+                <a href="#person2">
+                        <div class="speaker-card fade-in">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker2.jpg')}}" alt="Speaker 2" />
+                        <h3>Dr. SHAHUL HAMEED</h3>
+                        <p>Dean - Dental Science</p>
+                        </div>
+                </a>
+        
+                <a href="#person3">
+                        <div class="speaker-card fade-in">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker3.jpg')}}" alt="Speaker 3" />
+                        <h3>DR. Y.SWARNALATHA </h3>
+                        <p>Dean - Higher Studies</p>
+                        </div>
+                </a>
+        
+                <a href="#person4">
+                        <div class="speaker-card fade-in">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker4.jpg')}}" alt="Speaker 4" />
+                        <h3>Dr.E JOHN BRUCE</h3>
+                        <p> Dean - Placement</p>
+                        </div>
+                </a>
+        
+                <a href="#person5">
+                        <div class="speaker-card fade-in">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker5.jpg')}}" alt="Speaker 5" />
+                        <h3>Dr.G. BHUVANESHWARI</h3>
+                        <p> Dean-Management studies</p>
+                        </div>
+                </a>
+        
+                <a href="#person6">
+                        <div class="speaker-card fade-in">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker6.jpg')}}" alt="Speaker 6" />
+                        <h3>Dr.SHANMUGAPANDIYAN</h3>
+                        <p>Dean - School of Pharmacy</p>
+                        </div>
+                </a>
+        
+                <a href="#person7">
+                        <div class="speaker-card fade-in">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker7.jpg')}}" alt="Speaker 7" />
+                        <h3>Dr.NANDITHA N M</h3>
+                        <p>Dean - School of EEE</p>
+                        </div>
+                </a>
+        
+                <a href="#person8">
+                        <div class="speaker-card fade-in">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker8.jpg')}}" alt="Speaker 8" />
+                        <h3>Dr.S. PRAKASH</h3>
+                        <p>Dean - School of Mechanical</p>
+                        </div>
+                </a>
+                </div>
+        
+        
+        
+                <!-- Modals of speakers start -->
+                <div class="popup" id="person1">
+                <div class="popup-inner">
+                        <div class="popup__photo">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker1.jpg')}} alt="">
+                        </div>
+                        <div class="popup__text">
+                        <h1>Dr.BHARATHI</h1>
+                        <p><b>Dean - Academics</b></p>
+                        <br>
+                        <p>Dr.Bharathi B, Professor and Dean, Academics joined Sathyabama Institute of Science and Technology as
+                                Asst.
+                                Professor in August 2002. She has completed her Masters in Software Architectures. She has completed
+                                her doctoral
+                                research in Performance Evaluation of Software Architectures in 2012.</p>
+                        <div class="popup-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+        
+                        </div>
+                        <a class="popup__close" href="##">X</a>
+                </div>
+                </div>
+        
+                <div class="popup" id="person2">
+                <div class="popup-inner">
+                        <div class="popup__photo">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker2.jpg')}}" alt="">
+                        </div>
+                        <div class="popup__text">
+                        <h1>Dr. SHAHUL HAMEED FAIZEE</h1>
+                        <p><b>Dean - Dental Science</b></p>
+                        <br>
+                        <p>Dr.Shahul Hameed Faizee joined Sathyabama Dental College as Professor & Head of department of
+                                Orthodontics in April 2016.
+                                He completed his BDS in the year 1996 and MDS in 2001. Presently he is pursuing his PhD in Lasers in
+                                Orthodontics.
+                                He holds 20 years of teaching undergraduates and postgraduate dental students.
+                        </p>
+                        <div class="popup-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                        <a class="popup__close" href="##">X</a>
+                </div>
+                </div>
+        
+                <div class="popup" id="person3">
+                <div class="popup-inner">
+                        <div class="popup__photo">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker3.jpg')}}" alt="">
+                        </div>
+                        <div class="popup__text">
+                        <h1>DR. Y.SWARNALATHA </h1>
+                        <p><b>Dean - Higher Studies</b></p>
+                        <br>
+                        <p>Dr.Y.Swarnalatha joined Sathyabama Institute of Science and Technology as a lecturer in December 2004.
+                                She has completed her Ph.D in 2012 from Sathyabama Institute of Science and technology.
+                                Her research areas are Hepatoprotective drugs, Modern approaches in drug development and Biochemistry.
+                        </p>
+                        <div class="popup-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                        <a class="popup__close" href="##">X</a>
+                </div>
+                </div>
+        
+                <div class="popup" id="person4">
+                <div class="popup-inner">
+                        <div class="popup__photo">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker4.jpg')}}" alt="">
+                        </div>
+                        <div class="popup__text">
+                        <h1>Dr.E JOHN BRUCE</h1>
+                        <p><b>Dean - Placement</b></p>
+                        <br>
+                        <p>21+ years of total experience
+                                Working at Sathyabama Institute of Science & Technology since 1999. He is the Dean-Placements &
+                                Corporate Affairs,
+                                handling Campus Recruitment and Employability Skill development programs for the Engineering and
+                                Management students.</p>
+                        <div class="popup-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                        <a class="popup__close" href="##">X</a>
+                </div>
+                </div>
+        
+                <div class="popup" id="person5">
+                <div class="popup-inner">
+                        <div class="popup__photo">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker5.jpg')}}" alt="">
+                        </div>
+                        <div class="popup__text">
+                        <h1>Dr.G. BHUVANESHWARI</h1>
+                        <p><b>Dean - School of Management studies</b></p>
+                        <br>
+                        <p>Dr. Bhuvaneswari G. has been serving at the School of Management Studies –Sathyabama Institute of
+                                Science and Technology since 2003.
+                                Her doctoral thesis is on Customer Relationship Management in Corporate Hospitals. She teaches
+                                Strategic Marketing and Entrepreneurship in the MBA program.
+                        </p>
+                        <div class="popup-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                        <a class="popup__close" href="##">X</a>
+                </div>
+                </div>
+        
+                <div class="popup" id="person6">
+                <div class="popup-inner">
+                        <div class="popup__photo">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker6.jpg')}}" alt="">
+                        </div>
+                        <div class="popup__text">
+                        <h1>Dr.SHANMUGA PANDIYAN</h1>
+                        <p><b>Dean - School of Pharmacy</b></p>
+                        <br>
+                        <p>Dr.P.Shanmugapandiyan joined Sathyabama Institute of Science and Technology as Professor and Dean in
+                                2018.
+                                He got his graduation, post-graduation and doctorate degree from The Tamilnadu Dr.MGR Medical
+                                University, Chennai.
+                                His research interests are to synthesis biologically active compounds and Phytochemical works.</p>
+                        <div class="popup-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                        <a class="popup__close" href="##">X</a>
+                </div>
+                </div>
+        
+                <div class="popup" id="person7">
+                <div class="popup-inner">
+                        <div class="popup__photo">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker7.jpg')}}" alt="">
+                        </div>
+                        <div class="popup__text">
+                        <h1>Dr.NANDITHA N M</h1>
+                        <p><b>Dean - School of EEE</b></p>
+                        <br>
+                        <p>Dr.N.M.Nandhitha, Professor & Dean, School of Electrical and Electronics, joined Sathyabama Institute
+                                of Science and Technology as Asst.
+                                Professor in June 2002. She has completed her Masters in Power Electronics and Industrial Drives with
+                                a Gold Medal.
+                                She has completed her doctoral research in Thermal Image Processing and Soft Computing Techniques in
+                                2011.</p>
+                        <div class="popup-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                        <a class="popup__close" href="##">X</a>
+                </div>
+                </div>
+        
+                <div class="popup" id="person8">
+                <div class="popup-inner">
+                        <div class="popup__photo">
+                        <img src="{{url_for('static', filename='user/images/event_speakers/speaker8.jpg')}}" alt="">
+                        </div>
+                        <div class="popup__text">
+                        <h1>Dr.S. PRAKASH</h1>
+                        <p><b>Dean - School of Mechanical</b></p>
+                        <br>
+                        <p>Dr.S.Prakash, M.E., PhD, IIPE has over 28 years of teaching experience and 15 years of research
+                                experience.
+                                Experienced Dean with a demonstrated history of working in the higher education industry. Skilled in
+                                Curriculum Development, Artificial Intelligence (AI),
+                                Microsoft Office, Research, and Teaching. Strong education professional graduated from Sathyabama
+                                University.
+                        </p>
+                        <div class="popup-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                        <a class="popup__close" href="##">X</a>
+                </div>
+                </div>
+        </section>
+        </li>
+        <li data-page-no="3" class="px-3">
+        <section id="visitors">
+        <div class="wrapper">
+                <header>REGISTRATION</header>
+                <form method="POST" action="/register/startup_showcase" autocomplete="off">
+
+                        <div class="field name-field">
+                           <div class="input-field">
+                              <input type="text" name="name" placeholder="Enter Your Name" class="names" />
+            
+                           </div>
+                           <span class="error name-error">
+                              <i class="bx bx-error-circle error-icon"></i>
+                              <p class="error-text">
+                                 Please enter a valid name
+                              </p>
+                           </span>
+                        </div>
+                        <div class="field email-field">
+                           <div class="input-field">
+                              <input type="text" name="email" placeholder="Enter your email" class="emails" />
+                           </div>
+                           <span class="error email-error">
+                              <i class="bx bx-error-circle error-icon"></i>
+                              <p class="error-text">Please enter a valid email</p>
+                           </span>
+                        </div>
+                        <div class="field number-field">
+                           <div class="input-field">
+                              <input type="text" name="phno" placeholder="Enter your mobile number" class="numbers" />
+            
+                           </div>
+                           <span class="error number-error">
+                              <i class="bx bx-error-circle error-icon"></i>
+                              <p class="error-text">Enter a valid mobile Number</p>
+                           </span>
+                        </div>
+                        <div class="input-field button">
+                           <input type="submit" value="Register Now" />
+                        </div>
+                     </form>
+        </div>
+        </section>
+        </li>
+        </ul>
+</div>
+<div class="container-fluid"></div>
+</div>
+{% endblock content %}
+
+{% block scripts %}
+
+{% endblock scripts %}

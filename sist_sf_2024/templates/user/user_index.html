@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<!--hello-->
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- icon -->
+   <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='user/images/loader.png')}}">
+
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+   <!-- ico fonts -->
+   <link rel="stylesheet" href="{{url_for('static', filename='user/styles/xsIcon.css')}}">
+   <link rel="stylesheet" href="{{url_for('static', filename='user/styles/style.css')}}" />
+
+   <!-- magnific -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+   <link rel="stylesheet" href="{{url_for('static', filename='user/styles/magnific-popup.css')}}">
+
+   <!-- FontAwesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+   <!--Event Slider-->
+   <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
+
+   <!-- for loader -->
+   <link rel="stylesheet" href="{{url_for('static', filename='user/styles/preloader.css')}}">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+   <title>Sathyabama Startup Fest 2024</title>
+
+</head>
+
+<body>
+   <!-- PAGE LOADER -->
+   <div id="loading">
+      <div class="loader-container">
+         <!-- Outer rings -->
+         <div class="outer-ring1"></div>
+         <div class="outer-ring2"></div>
+         <div class="outer-ring3"></div>
+         <div class="loader">
+            <img class="image" src="{{url_for('static', filename='user/images/loader.png')}}" alt="PSF'24 LOGO">
+         </div>
+      </div>
+   </div>
+
+   <!-- PAGE LOADER END -->
+
+   <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+   </div>
+
+   <nav class="navbar" id="navbar">
+      <div class="max-width">
+         <div class="logo"><a href="#">
+               <img src="{{url_for('static', filename='user/images/logo.png')}}" alt="logo" style=" width: 200px;">
+            </a></div>
+         <ul class="menu">
+            <li><a href="#home" class="menu-btn">HOME</a></li>
+            <li><a href="#about" class="menu-btn">OVERVIEW</a></li>
+            <li><a href="#events" class="menu-btn">EVENTS</a></li>
+            <li><a href="#agenda" class="menu-btn">AGENDA</a></li>
+            <li><a href="#speakers" class="menu-btn">SPEAKERS</a></li>
+            <li><a href="#visitors" class="menu-btn">REGISTRATION</a></li>
+            <li><a href="#faqs" class="menu-btn">FAQs</a></li>
+            <li><a href="#subscribe" class="menu-btn">CONTACT US</a></li>
+         </ul>
+         <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+         </div>
+      </div>
+   </nav>
+
+
+
+   <!-- Home start -->
+   <section id="home" class="hero">
+      <video autoplay muted loop id="videoElement">
+         <source id="sourceElement" src="{{url_for('static', filename='user/videos/laptop.mp4')}}" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+
+      <!-- Add a separate video element for mobile screens -->
+      <video autoplay muted loop id="mobileVideoElement">
+         <source id="sourceElement" src="{{url_for('static', filename='user/videos/phone.mp4')}}" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+
+
+
+   </section>
+   <!-- Home end -->
+
+   <!-- About start -->
+   <section id="about" class="section-padding">
+      <h1>Event Overview</h1>
+
+      <div class="swiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="content">
+
+                  <p>
+                     Sathyabama Institute of Science and Technology
+                     proudly hosts an electrifying startup fest, a convergence of innovation and entrepreneurship. This
+                     event promises a dynamic platform for budding entrepreneurs, seasoned professionals, and investors
+                     alike.
+                     Through a myriad of meticulously planned activities, including round table discussions, mentorship
+                     sessions, and tech talks, participants delve into the depths of entrepreneurial wisdom. From idea
+                     pitching
+                     competitions to product exhibitions, the fest celebrates creativity and ingenuity. With MoU
+                     signings, investor
+                     connects, and intern networking opportunities, it fosters invaluable collaborations. Led by
+                     Sathyabama's
+                     commitment to nurturing talent, this event is a beacon illuminating the path towards a vibrant
+                     startup ecosystem.
+                  </p>
+               </div>
+
+               <div class="image-container">
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split1.jpg')}}"
+                     style="--i: 2" alt="" />
+
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split2.jpg')}}"
+                     style="--i: 6" alt="" />
+
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split3.jpg')}}"
+                     style="--i: 8" alt="" />
+
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split4.jpg')}}"
+                     style="--i: 4" alt="" />
+
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split5.jpg')}}"
+                     style="--i: 1" alt="" />
+
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split6.jpg')}}"
+                     style="--i: 9" alt="" />
+
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split7.jpg')}}"
+                     style="--i: 7" alt="" />
+
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split8.jpg')}}"
+                     style="--i: 5" alt="" />
+
+                  <img class="item" src="{{url_for('static', filename='user/images/event_overview/split9.jpg')}}"
+                     style="--i: 3" alt="" />
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+   </section>
+   <!-- About end -->
+
+   <!-- Events start -->
+   <section id="events">
+      <h1>Events</h1>
+      <div class="rt-container">
+         <div class="col-rt-12">
+            <div class="Scriptcontent">
+
+               <!-- partial:index.partial.html -->
+               <div class="container">
+                  <div class="wgh-slider">
+                     <input class="wgh-slider-target" type="radio" id="slide-1" name="slider" />
+                     <input class="wgh-slider-target" type="radio" id="slide-2" name="slider" />
+                     <input class="wgh-slider-target" type="radio" id="slide-3" name="slider" />
+                     <input class="wgh-slider-target" type="radio" id="slide-4" name="slider" />
+                     <input class="wgh-slider-target" type="radio" id="slide-5" name="slider" checked="checked" />
+                     <input class="wgh-slider-target" type="radio" id="slide-6" name="slider" />
+                     <input class="wgh-slider-target" type="radio" id="slide-7" name="slider" />
+                     <input class="wgh-slider-target" type="radio" id="slide-8" name="slider" />
+                     <input class="wgh-slider-target" type="radio" id="slide-9" name="slider" />
+                     <input class="wgh-slider-target" type="radio" id="slide-10" name="slider" />
+                     <div class="wgh-slider__viewport">
+                        <div class="wgh-slider__viewbox">
+                           <div class="wgh-slider__container">
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/round_table.jpeg')}}"
+                                          alt="The 5th Exotic" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.round_table')}}">Round
+                                             Table</a></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-1"
+                                       title="Show product 1"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/tech_talk.jpeg')}}"
+                                          alt="The 5th Exotic" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.tech_talks')}}">Tech
+                                             Talks</a></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-2"
+                                       title="Show product 2"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/mou.jpeg')}}"
+                                          alt="The 5th Exotic" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.mou_singing')}}">MoU
+                                             Signing</a></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-3"
+                                       title="Show product 3"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/bootcamp.jpeg')}}"
+                                          alt="The 5th Exotic" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.bootcamps')}}">Boot
+                                             Camps</a></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-4"
+                                       title="Show product 4"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/startup_show.jpeg')}}"
+                                          alt="RYSY - Traveler LP" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.startup_showcase')}}">Startup Show-Case</a>
+                                       </figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-5"
+                                       title="Show product 5"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/tech_exhibit.jpeg')}}"
+                                          alt="RYSY - Traveler LP" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.tech_exhibits')}}">Tech
+                                             Exhibits</a></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-6"
+                                       title="Show product 6"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/master_class.jpeg')}}"
+                                          alt="RYSY - Traveler LP" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.master_class')}}">Master
+                                             Class</a></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-7"
+                                       title="Show product 7"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/ideathon.jpeg')}}"
+                                          alt="RYSY - Traveler LP" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.ideathons')}}">Ideathons</a></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-8"
+                                       title="Show product 8"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/investor_connect.jpeg')}}"
+                                          alt="RYSY - Traveler LP" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.investor_connect')}}">Investor Connect</a>
+                                       </figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-9"
+                                       title="Show product 9"></label>
+                                 </div>
+                              </div>
+                              <div class="wgh-slider-item">
+                                 <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image"
+                                          src="{{url_for('static', filename='user/images/all_events/intern_connect.jpeg')}}"
+                                          alt="RYSY - Traveler LP" />
+                                       <figcaption class="wgh-slider-item-figure__caption"><a
+                                             href="{{url_for('user.intern_connect')}}">Intern
+                                             Connect</a></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-10"
+                                       title="Show product 10"></label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- partial -->
+
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <!-- Events end -->
+
+   <!-- schedule start -->
+   <section id="agenda" class="schedule">
+      <h1 class="schedule-head">Event Schedule</h1>
+      <div class="schedule-tab">
+         <ul class="nav_ul">
+            <li class="nav-item">
+               <a id="schedule-1" class="active">
+                  Day-01
+                  <span>14 March 2024</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a id="schedule-2" class="">
+                  Day-02
+                  <span>14 March 2024</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div class="schedule-contents">
+         <div class="schedule-item" id="day1">
+            <!-- Headings -->
+            <ul>
+               <li class="headings">
+                  <div class="time">Time</div>
+                  <div class="speaker">Speaker</div>
+                  <div class="subject">Subject</div>
+                  <div class="venue">Venue</div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">9.00 AM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day1/speaker1.jpg')}}"
+                           alt="speaker-thumb-one">
+                        <span class="name">Dr. Bharathi</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Start Show-Case</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium A</div>
+                  </div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">10.00 AM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day1/speaker2.jpg')}}"
+                           alt="speaker-thumb-two">
+                        <span class="name">Dr.Shahul Hameed Faizee</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Round Table</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium B</div>
+                  </div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">12.00 AM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day1/speaker3.jpg')}}"
+                           alt="speaker-thumb-three">
+                        <span class="name">Dr. Y.Swarnalatha</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Tech Talks</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium C</div>
+                  </div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">2.00 PM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day1/speaker5.jpg')}}"
+                           alt="speaker-thumb-four">
+                        <span class="name">Dr.E.John Bruce</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">MoU Signing</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium D</div>
+                  </div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">3.00 PM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day1/speaker5.jpg')}}"
+                           alt="speaker-thumb-five">
+                        <span class="name">Dr.G.Bhuvaneshwari</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Boot Camps</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium E</div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+
+         <br>
+
+         <div style="display:none;" class="schedule-item" id="day2">
+            <!-- Headings -->
+            <ul>
+               <li class="headings">
+                  <div class="time">Time</div>
+                  <div class="speaker">Speaker</div>
+                  <div class="subject">Subject</div>
+                  <div class="venue">Venue</div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">9.00 AM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day2/speaker1.jpg')}}"
+                           alt="speaker-thumb-one">
+                        <span class="name">Dr. Shanmuga Pandiyan</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Tech Exhibits</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium A</div>
+                  </div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">10.00 AM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day2/speaker2.jpg')}}"
+                           alt="speaker-thumb-two">
+                        <span class="name">Dr.Nanditha N M</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Master Class</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium B</div>
+                  </div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">12.00 AM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day2/speaker3.jpg')}}"
+                           alt="speaker-thumb-three">
+                        <span class="name">Dr. S.Prakash</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Ideathons</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium C</div>
+                  </div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">2.00 PM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day2/speaker4.jpg')}}"
+                           alt="speaker-thumb-four">
+                        <span class="name">Dr. Bharathi</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Investor Connect</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium D</div>
+                  </div>
+               </li>
+               <!-- Schedule Details -->
+               <li class="schedule-details">
+                  <div class="block">
+                     <!-- time -->
+                     <div class="time">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="time">3.00 PM</span>
+                     </div>
+                     <!-- Speaker -->
+                     <div class="speaker">
+                        <img style="height:65px; width:65px;"
+                           src="{{url_for('static', filename='user/images/event_schedule_day2/speaker5.jpg')}}"
+                           alt="speaker-thumb-five">
+                        <span class="name">Dr.E. John Bruce</span>
+                     </div>
+                     <!-- Subject -->
+                     <div class="subject">Intern Connect</div>
+                     <!-- Venue -->
+                     <div class="venue">Auditorium E</div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      </div>
+      <script src="{{url_for('static', filename='user/scripts/jquery.js')}}"></script>
+      <script src="{{url_for('static', filename='user/scripts/popper.min.js')}}"></script>
+   </section>
+   <!-- schedule end  -->
+
+   <!--Speakers starts-->
+   <section id="speakers">
+      <h2 class="head">
+         Event Speakers
+      </h2>
+      <div class="container-speaker">
+
+         <a href="#person1">
+            <div class="speaker-card fade-in">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker1.jpg')}}" alt="Speaker 1" />
+               <h3>Dr.BHARATHI</h3>
+               <p>Dean - Academics</p>
+            </div>
+         </a>
+
+         <a href="#person2">
+            <div class="speaker-card fade-in">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker2.jpg')}}" alt="Speaker 2" />
+               <h3>Dr. SHAHUL HAMEED</h3>
+               <p>Dean - Dental Science</p>
+            </div>
+         </a>
+
+         <a href="#person3">
+            <div class="speaker-card fade-in">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker3.jpg')}}" alt="Speaker 3" />
+               <h3>DR. Y.SWARNALATHA </h3>
+               <p>Dean - Higher Studies</p>
+            </div>
+         </a>
+
+         <a href="#person4">
+            <div class="speaker-card fade-in">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker4.jpg')}}" alt="Speaker 4" />
+               <h3>Dr.E JOHN BRUCE</h3>
+               <p> Dean - Placement</p>
+            </div>
+         </a>
+
+         <a href="#person5">
+            <div class="speaker-card fade-in">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker5.jpg')}}" alt="Speaker 5" />
+               <h3>Dr.G. BHUVANESHWARI</h3>
+               <p> Dean-Management studies</p>
+            </div>
+         </a>
+
+         <a href="#person6">
+            <div class="speaker-card fade-in">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker6.jpg')}}" alt="Speaker 6" />
+               <h3>Dr.SHANMUGAPANDIYAN</h3>
+               <p>Dean - School of Pharmacy</p>
+            </div>
+         </a>
+
+         <a href="#person7">
+            <div class="speaker-card fade-in">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker7.jpg')}}" alt="Speaker 7" />
+               <h3>Dr.NANDITHA N M</h3>
+               <p>Dean - School of EEE</p>
+            </div>
+         </a>
+
+         <a href="#person8">
+            <div class="speaker-card fade-in">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker8.jpg')}}" alt="Speaker 8" />
+               <h3>Dr.S. PRAKASH</h3>
+               <p>Dean - School of Mechanical</p>
+            </div>
+         </a>
+      </div>
+
+
+
+      <!-- Modals of speakers start -->
+      <div class="popup" id="person1">
+         <div class="popup-inner">
+            <div class="popup__photo">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker1.jpg')}}" alt="">
+            </div>
+            <div class="popup__text">
+               <h1>Dr.BHARATHI</h1>
+               <p><b>Dean - Academics</b></p>
+               <br>
+               <p>Dr.Bharathi B, Professor and Dean, Academics joined Sathyabama Institute of Science and Technology as
+                  Asst.
+                  Professor in August 2002. She has completed her Masters in Software Architectures. She has completed
+                  her doctoral
+                  research in Performance Evaluation of Software Architectures in 2012.</p>
+               <div class="popup-social">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+               </div>
+
+            </div>
+            <a class="popup__close" href="##">X</a>
+         </div>
+      </div>
+
+      <div class="popup" id="person2">
+         <div class="popup-inner">
+            <div class="popup__photo">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker2.jpg')}}" alt="">
+            </div>
+            <div class="popup__text">
+               <h1>Dr. SHAHUL HAMEED FAIZEE</h1>
+               <p><b>Dean - Dental Science</b></p>
+               <br>
+               <p>Dr.Shahul Hameed Faizee joined Sathyabama Dental College as Professor & Head of department of
+                  Orthodontics in April 2016.
+                  He completed his BDS in the year 1996 and MDS in 2001. Presently he is pursuing his PhD in Lasers in
+                  Orthodontics.
+                  He holds 20 years of teaching undergraduates and postgraduate dental students.
+               </p>
+               <div class="popup-social">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+            <a class="popup__close" href="##">X</a>
+         </div>
+      </div>
+
+      <div class="popup" id="person3">
+         <div class="popup-inner">
+            <div class="popup__photo">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker3.jpg')}}" alt="">
+            </div>
+            <div class="popup__text">
+               <h1>DR. Y.SWARNALATHA </h1>
+               <p><b>Dean - Higher Studies</b></p>
+               <br>
+               <p>Dr.Y.Swarnalatha joined Sathyabama Institute of Science and Technology as a lecturer in December 2004.
+                  She has completed her Ph.D in 2012 from Sathyabama Institute of Science and technology.
+                  Her research areas are Hepatoprotective drugs, Modern approaches in drug development and Biochemistry.
+               </p>
+               <div class="popup-social">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+            <a class="popup__close" href="##">X</a>
+         </div>
+      </div>
+
+      <div class="popup" id="person4">
+         <div class="popup-inner">
+            <div class="popup__photo">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker4.jpg')}}" alt="">
+            </div>
+            <div class="popup__text">
+               <h1>Dr.E JOHN BRUCE</h1>
+               <p><b>Dean - Placement</b></p>
+               <br>
+               <p>21+ years of total experience
+                  Working at Sathyabama Institute of Science & Technology since 1999. He is the Dean-Placements &
+                  Corporate Affairs,
+                  handling Campus Recruitment and Employability Skill development programs for the Engineering and
+                  Management students.</p>
+               <div class="popup-social">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+            <a class="popup__close" href="##">X</a>
+         </div>
+      </div>
+
+      <div class="popup" id="person5">
+         <div class="popup-inner">
+            <div class="popup__photo">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker5.jpg')}}" alt="">
+            </div>
+            <div class="popup__text">
+               <h1>Dr.G. BHUVANESHWARI</h1>
+               <p><b>Dean - School of Management studies</b></p>
+               <br>
+               <p>Dr. Bhuvaneswari G. has been serving at the School of Management Studies –Sathyabama Institute of
+                  Science and Technology since 2003.
+                  Her doctoral thesis is on Customer Relationship Management in Corporate Hospitals. She teaches
+                  Strategic Marketing and Entrepreneurship in the MBA program.
+               </p>
+               <div class="popup-social">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+            <a class="popup__close" href="##">X</a>
+         </div>
+      </div>
+
+      <div class="popup" id="person6">
+         <div class="popup-inner">
+            <div class="popup__photo">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker6.jpg')}}" alt="">
+            </div>
+            <div class="popup__text">
+               <h1>Dr.SHANMUGA PANDIYAN</h1>
+               <p><b>Dean - School of Pharmacy</b></p>
+               <br>
+               <p>Dr.P.Shanmugapandiyan joined Sathyabama Institute of Science and Technology as Professor and Dean in
+                  2018.
+                  He got his graduation, post-graduation and doctorate degree from The Tamilnadu Dr.MGR Medical
+                  University, Chennai.
+                  His research interests are to synthesis biologically active compounds and Phytochemical works.</p>
+               <div class="popup-social">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+            <a class="popup__close" href="##">X</a>
+         </div>
+      </div>
+
+      <div class="popup" id="person7">
+         <div class="popup-inner">
+            <div class="popup__photo">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker7.jpg')}}" alt="">
+            </div>
+            <div class="popup__text">
+               <h1>Dr.NANDITHA N M</h1>
+               <p><b>Dean - School of EEE</b></p>
+               <br>
+               <p>Dr.N.M.Nandhitha, Professor & Dean, School of Electrical and Electronics, joined Sathyabama Institute
+                  of Science and Technology as Asst.
+                  Professor in June 2002. She has completed her Masters in Power Electronics and Industrial Drives with
+                  a Gold Medal.
+                  She has completed her doctoral research in Thermal Image Processing and Soft Computing Techniques in
+                  2011.</p>
+               <div class="popup-social">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+            <a class="popup__close" href="##">X</a>
+         </div>
+      </div>
+
+      <div class="popup" id="person8">
+         <div class="popup-inner">
+            <div class="popup__photo">
+               <img src="{{url_for('static', filename='user/images/event_speakers/speaker8.jpg')}}" alt="">
+            </div>
+            <div class="popup__text">
+               <h1>Dr.S. PRAKASH</h1>
+               <p><b>Dean - School of Mechanical</b></p>
+               <br>
+               <p>Dr.S.Prakash, M.E., PhD, IIPE has over 28 years of teaching experience and 15 years of research
+                  experience.
+                  Experienced Dean with a demonstrated history of working in the higher education industry. Skilled in
+                  Curriculum Development, Artificial Intelligence (AI),
+                  Microsoft Office, Research, and Teaching. Strong education professional graduated from Sathyabama
+                  University.
+               </p>
+               <div class="popup-social">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+            <a class="popup__close" href="##">X</a>
+         </div>
+      </div>
+
+   </section>
+   <!--Speakers ends-->
+
+   <!-- Visitors start -->
+   <section id="visitors">
+      <h1>Register</h1>
+      <div class="wrapper">
+         <header>REGISTRATION</header>
+         <form method="POST" action="/register/event_visitors" autocomplete="off">
+
+            <div class="field name-field">
+               <div class="input-field">
+                  <input type="text" name="name" placeholder="Enter Your Name" class="names" />
+
+               </div>
+               <span class="error name-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">
+                     Please enter a valid name
+                  </p>
+               </span>
+            </div>
+            <div class="field email-field">
+               <div class="input-field">
+                  <input type="text" name="email" placeholder="Enter your email" class="emails" />
+               </div>
+               <span class="error email-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Please enter a valid email</p>
+               </span>
+            </div>
+            <div class="field number-field">
+               <div class="input-field">
+                  <input type="text" name="phno" placeholder="Enter your mobile number" class="numbers" />
+
+               </div>
+               <span class="error number-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Enter a valid mobile Number</p>
+               </span>
+            </div>
+            <div class="input-field button">
+               <input type="submit" value="Register Now" />
+            </div>
+         </form>
+      </div>
+
+   </section>
+   <!-- Visitors end -->
+
+
+   <!-- FAQ start -->
+   <section id="faqs" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+      <h2>Frequently Asked Questions</h2>
+
+
+      <div class="wrapper-faq">
+         <div class="faq-row1">
+            <div class="faq-container">
+               <div class="question-faq">
+                  Is the Sathyabama Startup-Fest 2024 a career fair?
+               </div>
+               <div class="answercont-faq">
+                  <div class="answer-faq">
+                     Leave your resumes at home because the Tech Expo is not a career fair. The Tech Expo will
+                     host engineering staffs and manufacturing department employees. The Tech Expo is an opportunity for
+                     companies to promote their businesses, display what they’re working on and network with
+                     manufacturers,
+                     suppliers, clients and customers. It’s everyone’s opportunity to “talk shop.”
+                  </div>
+               </div>
+            </div>
+
+            <div class="faq-container">
+               <div class="question-faq">
+                  Who should attend the Sathyabama Startup Fest 2024?
+               </div>
+               <div class="answercont-faq">
+                  <div class="answer-faq">
+                     Manufacturers, suppliers, clients and customers who want to connect with other
+                     manufacturers, suppliers, clients and customers should attend Tech Expo. Companies that are
+                     interested in
+                     seeing the capabilities of the students will also benefit from attending.
+                  </div>
+               </div>
+            </div>
+
+            <div class="faq-container">
+               <div class="question-faq">
+                  Where is the events and what are the timings?
+               </div>
+               <div class="answercont-faq">
+                  <div class="answer-faq">
+                     The event will take place at Sathyabama Institute of Science and Technology, Chennai,
+                     Tamil Nadu. For event details please feel free to explore the event section
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="faq-row2">
+            <div class="faq-container">
+               <div class="question-faq">
+                  Do we have to fill both the registration forms?
+               </div>
+               <div class="answercont-faq">
+                  <div class="answer-faq">
+                     If you are a participant of any event fill the form with respective of the event. If you
+                     are a visitor then fill the visitors form. Filling both form is not nessasary
+                  </div>
+               </div>
+            </div>
+
+            <div class="faq-container">
+               <div class="question-faq">
+                  My business is small — just a few people. Should I attend the Event
+               </div>
+               <div class="answercont-faq">
+                  <div class="answer-faq">
+                     Yes! Here’s your chance to network with people from businesses of all sizes.
+                  </div>
+               </div>
+            </div>
+
+            <div class="faq-container">
+               <div class="question-faq">
+                  Is it free?
+               </div>
+               <div class="answercont-faq">
+                  <div class="answer-faq">
+                     Yes, We focus on providing platform for all people to disclose their talents, Hence the
+                     tickets are free!
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- FAQ end -->
+
+   <!-- Newsletter start -->
+   <section id="subscribe">
+      <div class="container">
+         <div class="sub-row1">
+            <h2>For any queries</h2>
+            <h3>feel free to contact us</h3>
+            <button type="button"><a
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqXbdLRXqMWkMLKTlmFPnZfjqxQRFbCxHcwTmmFtTVQGzcZMndrzndgPHJGmZPGfTcPDq"
+                  target="_blank">startupfest@sathyabama.ac.in</a></button>
+         </div>
+
+         <div class="sub-row2">
+            <div class="map-outer">
+               <div class="gmap-canvas">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.541232027425!2d80.22350167483958!3d12.872880887433496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b8c90befe2b%3A0x170ab8b5b21bb530!2sSathyabama%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1709747620622!5m2!1sen!2sin"
+                     width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade" id="gmap-canvas"></iframe>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+   <!-- Newsletter start -->
+
+   <!-- Footer start -->
+   <footer id="footer">
+      <div class="container-footer">
+         <div class="footer-row1">
+            <a href="#">
+               <img src="{{url_for('static', filename='user/images/logo.png')}}" alt="">
+            </a>
+            <h5>Sathyabama has emerged as a leading Institution and achieved excellence in higher education to
+               international
+               standards owing to its research and academic excellence.</h5>
+         </div>
+         <div class="footer-content">
+            <div class="footer-row2">
+               <h5 class="text-white ">Get In Touch</h5>
+               <div class="content-footer">
+                  <a href="https://maps.app.goo.gl/tcy5qKRLPQ1mDn459" target="_blank" style="text-decoration: none;"><i
+                        class="fa fa-map-marker-alt me-3"></i>Jeppiaar Nagar,<br> Rajiv Gandhi Salai,<br>
+                     Chennai - 600 119</a><br>
+                  <a><i class="fa fa-phone-alt me-3"></i>044 - 2450 3150</a><br>
+                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqXbdLRXqMWkMLKTlmFPnZfjqxQRFbCxHcwTmmFtTVQGzcZMndrzndgPHJGmZPGfTcPDq"
+                     style="text-decoration: none;" target="_blank"><i class="fa fa-envelope me-3"></i>startupfest <br>
+                     @sathyabama.ac.in</a>
+               </div>
+            </div>
+            <div class="footer-row3">
+               <h5 class="text-white">INFO</h5>
+               <a class="btn btn-link" href="https://www.facebook.com/SathyabamaOfficial/"><i
+                     class="fab fa-facebook-f"></i>
+                  Facebook </a><br>
+               <a class="btn btn-link" href="https://twitter.com/i/flow/login?redirect_after_login=%2FsathyabamaSIST"><i
+                     class="fab fa-twitter"></i> Twitter</a><br>
+               <a class="btn btn-link" href="https://www.instagram.com/sathyabama.official/"><i
+                     class="fab fa-instagram"></i>
+                  Instagram</a><br>
+               <a class="btn btn-link" href="https://www.youtube.com/channel/UCkBMqT83pxjwPhh8mUpZ0hQ"><i
+                     class="fab fa-youtube"></i> Youtube</a>
+            </div>
+         </div>
+
+   </footer>
+
+   <div style="background-color:#100F39; font-size: 18px; text-align:center;">
+      <p style="color:aliceblue;">DESIGNED BY VS & TEAM</p>
+   </div>
+   <!-- Footer end -->
+
+   <!-- background galaxy animation start -->
+   <div class="bg"></div>
+   <div class="star-field">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+   </div>
+   <!-- background galaxy animation start -->
+
+
+
+   <!-- Javascript Files
+            ================================================== -->
+
+
+   <!-- schedule -->
+
+
+   <script>
+      // Check if the device is mobile
+      function isMobile() {
+         return window.innerWidth <= 768;
+      }
+
+      // Initialize Swiper only on mobile devices
+      if (isMobile()) {
+         const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+               el: '.swiper-pagination',
+               clickable: true,
+            },
+            loop: true
+         });
+      }
+   </script>
+
+   <!-- Counter -->
+   <script src="{{url_for('static', filename='user/scripts/jquery.magnific-popup.min.js')}}"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <!-- Scripts start -->
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="{{url_for('static', filename='user/scripts/script.js')}}"></script>
+
+
+   <script src="{{url_for('static', filename='user/scripts/main.js')}}"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+   <!-- Scripts end -->
+</body>
+
+</html>
